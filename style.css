@@ -65,11 +65,16 @@ body{
   padding: 0;
 }
 
+
+#sec1{
+  height: 100vh;
+}
 /* მენიუ */
 .header{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px 0px 10px 40px;
+  padding: 0px 0px 10px 40px;
 }
 
 /* ლოგო */
@@ -151,6 +156,7 @@ body{
 /* მთავარი გვერდი დასაწყისი */
 .mainpage{
   display: flex;
+  height: calc(100vh - 220px);
 }
 /* მთავარი გვერდი დასასრული */
 
@@ -174,14 +180,17 @@ body{
 
 #ul2 li img{
   border-radius: 50%;
+  border: 3px solid #fff;
+  padding: 3px;
+  transition: .5s;
 }
 
 #ul2 li img:hover{
   border: 5px solid aqua;
   border-radius: 50%;
   padding: 3px;
-  transition: 1s;
-  transform: scale(1);
+  
+  transform: scale(1.1);
 }
 /* ავატარების არჩევანი დამთავრება */
 
@@ -192,19 +201,21 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+	white-space: pre;
 }
 
 .text h1{
   text-align: center;
   font-size: 40px;
   color: #b309ff;
+	white-space: pre;
 }
 
 .text h6{
   text-align: center;
   font-size: 16px;
   color: #0970ff;
+	white-space: pre;
 }
 
 /* ტექსტის სტილი დასასრული */
@@ -216,30 +227,35 @@ body{
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   opacity: 1;
 }
-
-
 
 /* <!-- პერსონაჟების დამთავრება --> */
 
 
 
-/* პირველი გვერდის ჰოვერი დასაწყისი */
-
-
-/* პირველი გვერდის ჰოვერი დასასრული */
-
 
 
 
 /* <!-- მეორე გვერდი დასაწყისი --> */
+/* პირველი */
+
 /* ნუმერაცია დასაწყისი */
 .secondpage{
   display: none;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 90vh;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-box{
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -249,6 +265,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 80vh;
 }
 
 #ul3{
@@ -272,17 +289,430 @@ body{
   background-color: #9534d2;
   transition: 0.5s;
   color: #fff;
+  cursor: pointer;
+}
 
+/* ნუმერაცია დასასრული */
+
+/* არჩევანი დასაწყისი */
+.choose1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  cursor: pointer;
+}
+#second-block{
+  display: none;
+
+}
+
+#third-block {
+  display: none;
+}
+#forth-block{
+  display: none;
+}
+#fifth-block{
+  display: none;
+}
+#msuqani{
+  display: none;
+}
+#magali{
+  display: none;
+}
+#msuqani1{
+  display: none;
+}
+#magali1{
+  display: none;
+}
+
+
+/* არჩევანი დასასრული */
+
+
+/* ""შემდეგი"" ღილაკის დასაწყისი */
+.button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 60px;
+  padding-right: 60px;
+}
+.button button{
+  border: none;
+  width: 110px;
+  height: 30px;
+  background-color: #dcd4e1;
+  color: #0970ff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.button button:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button button:nth-child(1):hover{
+  background-color: #6b69e5;
+  transition: .5s;
+  cursor: pointer;
+  color: white;
+}
+
+.button button .fa{
+	margin: 0;
+	padding: 0;
+}
+
+.button button:hover{
+  background-color: #9534d2;
+  transition: .5s;
+  cursor: pointer;
+  color: white;
+}
+
+/* ""შემდეგი"" ღილაკის დასასრული */
+/* პირველის დასასრული */
+
+/* მეორე დასაწყისი */
+.secondchoose{
+  display: none;
 }
 
 
 
-/* ნუმერაცია დასასრული */
+/* მეორე დასასრული */
 
 
 
+/* <!-- მესამეს დასაწყისი --> */
+.thirdchoose{
+  display: none;
+}
+
+#mtagif{
+	display: none;
+}
+#sigaretigif{
+	display: none;
+}
+/* <!-- მესამეს დასასრული --> */
 
 
+/* <!-- მეოთხეს დასაწყისი --> */
+.fourchoose{
+  display: none;
+}
+
+#eqimigif{
+	display: none;
+}
+
+#gugligif{
+	display: none;
+}
+
+/* <!-- მეოთეს დასასრული --> */
 
 
+/* მეხუთეს დასაწყისი */
+
+.fifthchoose{
+  display: none;
+}
+
+#wyaligif{
+	display: none;
+}
+
+#ludigif{
+	display: none;
+}
+
+/* მეხუთეს დასასრული */
+
+/* <!-- საბოლოვო გვერდი დასაწყისი --> */
+.finalpage{
+	display: none;
+	width: 100%;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+
+.archevani{
+	flex-direction: column;
+	display: flex;
+	/* width: 100px; */
+	justify-content: space-around;
+}
+
+
+.textfinal{
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	/* width: 100px;	 */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.numbers1{
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#ul4 li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dcd4e1;
+}
+
+#ul4 li:hover{
+  background-color: #9534d2;
+  transition: 0.5s;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* <!-- საბოლოვო გვერდი დასასრული --> */
 /* <!-- მეორე გვერდი დასასრული --> */
+
+
+
+
+
+
+
+
+
+/* ჩვენ შესახებ გვერდი */
+/* დასაწყისი */
+.abtext{
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: calc(100vh - 136px);
+}
+
+.textabout{
+	text-align: center;
+}
+
+.abtext h1{
+	font-family: sans-serif;
+	font-size: 44px;
+	color: #9534d2;
+	margin: 20px 20px 40px 20px
+}
+
+.abtext h4{
+	word-spacing: 2px;
+	font-family: sans-serif;
+	white-space: pre;
+  font-size: 18px;
+  color: #0970ff;
+  margin: 0 0 0 0;
+}
+
+
+.avtors{
+	margin:20px 20px 20px 20px;
+}
+
+.abtext h3{
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #9534d2;
+	margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* კონტაქტის გვერდი */
+/* კონტაქტის ფორმა დასაწყისი */
+.contact-title{
+  text-align: center;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.contact-title h1{
+  margin:  0 0 30px 0;
+  color: #9534d2;
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2{
+  color: #0970ff;
+  font-size: 16px;
+  line-height: 10px;
+}
+
+.contact-form{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+input{
+  height: 45px;
+}
+
+form .submit{
+  background: #ff5722;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 50px;
+  text-align: center;
+  width: 200px;
+}
+form .submit:hover{
+  background: #ff5722;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* კონტაქტის ფორმა დასასრული */
+/* აიქონები დასაწყსი */
+.sharecon{
+	display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column
+}
+#ulc{
+  /* position: absolute; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* top: 90%;
+  left: 50%; */
+  transform: translate(-50%,-50%);
+  width: 192px;
+  height: 60px;
+}
+#ulc::before{
+  content: "\f1e0";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #b91fed, #8a2be2);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 2px;
+  transition: 0.5s;
+  z-index: 1;
+}
+#ulc:hover::before{
+  width: 60px;
+}
+
+#ulc li{
+  position: absolute;
+  list-style: none;
+  transition: 1s;
+}
+
+#ulc li a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  margin: 0 2px;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: 1s;
+}
+
+#ulc li:nth-child(1) a{
+  background: #3b5999;
+}
+#ulc li:nth-child(2) a{
+  background: #e4405f;
+}
+#ulc li:nth-child(3) a{
+  background: #55acee;
+}
+
+#ulc:hover li:nth-child(1) a{
+  transform: translateX(64px) rotate(360deg);
+}
+#ulc:hover li:nth-child(2) a{
+  transform: translateX(128px) rotate(360deg);
+}
+#ulc:hover li:nth-child(3) a{
+  transform: translateX(192px) rotate(360deg);
+}
+
+.fa{
+  margin-top: 15px;
+}
+
+/* აიქონები დასასრული */
