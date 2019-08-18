@@ -1,0 +1,288 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+  text-decoration: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* ჩემი კოდი */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* მენიუ */
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 10px 40px;
+}
+
+/* ლოგო */
+.header a img{
+  width: 150;
+  height: 126;
+}
+
+
+/* მენიუ1 */
+#ul1{
+  display: flex;
+	margin-right: 20px;
+	/* transform: translate(-50%,-50%); */
+}
+#ul1 #li1{
+  list-style: none;
+	font-family: "BPG Banner Caps", sans-serif;
+}
+
+#ul1 #li1 a{
+  position: relative;
+  display: block;
+	text-align: center;
+  margin: 0 25px;
+	font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0970ff;
+  font-weight: 600;
+	transition: .5s;
+	padding: 5px 10px;
+
+}
+#ul1 #li1 a:hover{
+	color: #fff;
+	background: #b309ff
+}
+
+#ul1 #li1 a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+	border: 3px solid #b309ff;
+	border-width: 0 0 3px 3px;
+  opacity: 0;
+  transition: .5s;
+}
+
+#ul1 #li1 a:hover::before{
+	bottom: -10px;
+	left: -10px;
+	opacity: 1;
+}
+#ul1 #li1 a::after{
+	content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+	border: 3px solid #b309ff;
+	border-width: 3px 3px 0 0;
+  opacity: 0;
+  transition: .5s;
+}
+
+#ul1 #li1 a:hover::after{
+	top: -10px;
+  right: -10px;
+	opacity: 1;
+}
+
+
+
+/* მთავარი გვერდი დასაწყისი */
+.mainpage{
+  display: flex;
+}
+/* მთავარი გვერდი დასასრული */
+
+
+/* ავატარების არჩევანი დაწყება */
+.avatars{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ul2{
+  list-style: none;
+  padding-top: 20px;
+}
+
+#ul2 li{
+  padding: 10px;
+}
+
+#ul2 li img{
+  border-radius: 50%;
+}
+
+#ul2 li img:hover{
+  border: 5px solid aqua;
+  border-radius: 50%;
+  padding: 3px;
+  transition: 1s;
+  transform: scale(1);
+}
+/* ავატარების არჩევანი დამთავრება */
+
+/* ტექსტის სტილი დასაწყისი */
+.text{
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.text h1{
+  text-align: center;
+  font-size: 40px;
+  color: #b309ff;
+}
+
+.text h6{
+  text-align: center;
+  font-size: 16px;
+  color: #0970ff;
+}
+
+/* ტექსტის სტილი დასასრული */
+
+
+
+/* <!-- პერსონაჟების დაწყება --> */
+.back{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 1;
+}
+
+
+
+/* <!-- პერსონაჟების დამთავრება --> */
+
+
+
+/* პირველი გვერდის ჰოვერი დასაწყისი */
+
+
+/* პირველი გვერდის ჰოვერი დასასრული */
+
+
+
+
+/* <!-- მეორე გვერდი დასაწყისი --> */
+/* ნუმერაცია დასაწყისი */
+.secondpage{
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.numbers{
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ul3{
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+
+#ul3 li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dcd4e1;
+}
+
+#ul3 li:hover{
+  background-color: #9534d2;
+  transition: 0.5s;
+  color: #fff;
+
+}
+
+
+
+/* ნუმერაცია დასასრული */
+
+
+
+
+
+
+
+/* <!-- მეორე გვერდი დასასრული --> */
